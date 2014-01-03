@@ -1,0 +1,23 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+define('DEFAULT_SEO', 'Bán nhà chính chủ');
+define('DEFAULT_SEO_1', 'bán nhà');
+define('DEFAULT_SEO_2', 'bán đất');
+define('DEFAULT_SEO_3', 'Bán nhà đất');
+define('DEFAULT_SEO_4', 'cho thuê văn phòng');
+define('DEFAULT_SEO_5', 'văn phòng cho thuê');
+define('DEFAULT_SEO_6', 'nhà cho thuê');
+define('DEFAULT_SEO_7', 'Cho thuê nhà');
+
+define('BIET_THU'           , 1);
+define('NHA_RIENG'          , 2);
+define('CHUNG_CU'           , 3);
+define('TAP_THE'            , 14);
+define('NHA_CAP_4'          , 4);
+define('NHA_VUON'           , 5);
+define('NHA_PHAN_LO'        , 6);
+define('VAN_PHONG'          , 7);
+define('NHA_XUONG'          , 8);
+define('DAT_THO_CU'         , 9);
+define('DAT_PHAN_LO'        , 11);
+define('DAT_DU_AN'          , 12);
+define('LOAI_KHAC'          , 13);

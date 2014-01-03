@@ -1,0 +1,10 @@
+RewriteEngine on
+
+# redirect from non-www to www.*
+RewriteCond %{HTTP_HOST} ^([a-z.]+)?sgpower\.com\.vn$ [NC]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule .? http://www.%1sgpower.com.vn%{REQUEST_URI} [R=301,L]
+
+# added for removing index.php
+RewriteCond $1 !^(index\.php|duongbq|images|css|scripts|robots\.txt|urllist\.txt|sitemap\.html|ror\.xml|\.swf|google848073e2cca0f632\.html)
+RewriteRule ^(.*)$ index.php/$1 [L]

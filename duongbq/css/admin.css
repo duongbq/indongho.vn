@@ -1,0 +1,631 @@
+body{
+    background: #E0DBDB no-repeat 50%;
+    background-attachment: fixed;
+    /*    background-color: #dcdcdc;*/
+    min-width: 1000px;
+    font-family:verdana, arial, tahoma;
+    font-size: 12px;
+    color: #3d3d3d;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+.content_container {
+    display: inline;
+    float: left;
+    background-color:#fff;
+    margin-top:5px;
+    margin-bottom:5px;
+    -moz-box-shadow : 0 0 1px #555;
+    -webkit-box-shadow : 0 0 1px #555;
+    box-shadow : 0 0 1px #555;
+    -moz-border-radius      : 2px;
+    width: 1000px;
+}
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.header {
+    background-color: #3e3e3e;
+    -moz-box-shadow : 0 0 4px #222;
+    -webkit-box-shadow : 0 0 4px #222;
+    box-shadow : 0 0 4px #222;
+}
+.footer, .footer a {
+    font-family:verdana, arial, tahoma;
+    font-size: 12px;
+    line-height: 16px;
+    color: #222;
+    text-decoration: none;
+}
+.footer p{
+    padding: 5px;
+}
+
+/*form content chua cac form, table*/
+.form_content {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Định nghĩa cho table*/
+.list tr th, .list tr td {
+    font-family:verdana, arial, tahoma;
+    font-size: 12px;
+    padding: 5px;
+    line-height: 16px;
+    border: solid 1px #ddd;
+}
+.list tr th {
+    font-weight: bold;
+    background-color: #e5e5e5;
+    color: #222;
+    white-space: nowrap;
+}
+.list tr.list-footer th {
+    font-weight: bold;
+    background-color: #ededed;
+    color: #222;
+    white-space: nowrap;
+    text-align: left;
+}
+.list tr td {
+    font-weight: normal;
+    color: #222;
+}
+.list tr.odd td {
+    background-color:#f5f5f5;
+}
+.list tr.even td {
+    background-color:#fff;
+}
+.list tr:hover td {
+    background-color:#eee;
+}
+.list tr td a {
+    color: #555;
+    text-decoration: none;
+}
+.list tr td.bold a {
+    font-weight: bold;
+}
+.list tr td a:hover {
+    text-decoration: underline;
+}
+.list tr td.bold {
+    font-weight: bold;
+}
+/*end*/
+
+/*những mục dùng chung*/
+.left {text-align:left;}
+.center {text-align:center;}
+.right {text-align:right;}
+.fleft {float:left;}
+.fright {float:right;}
+.bold {font-weight: bold;}
+.red {color:red;}
+.green {color:green;}
+.blue {color:blue;}
+/*end*/
+/*Định nghĩa page*/
+.page_header {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background : #f9f9f9; /* old browsers */
+    background : -moz-linear-gradient(top, #f9f9f9 0%, #ddd 100%); /* firefox */
+    background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#ddd)); /* webkit */
+    /*filter : progid : DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#ddd',GradientType=0 );  ie */
+    background : -o-linear-gradient(top, #f9f9f9 0%,#ddd 100%); /* opera */
+    border-bottom: solid 1px #ccc;
+    -moz-box-shadow : 0 0 1px #fff;
+    -webkit-box-shadow : 0 0 1px #fff;
+    box-shadow : 0 0 1px #fff;
+}
+.page_header h1{
+    font-family:verdana, arial, tahoma;
+    font-size: 20px;
+    padding: 5px;
+    line-height: 20px;
+    margin: 5px;
+    color: #AA0000;
+    font-weight: normal;
+    text-shadow: 1px 1px 0 #FFFFFF;
+}
+.page_header small{
+    font-family:verdana, arial, tahoma;
+    font-size: 12px;
+    margin-top: 16px;
+    color: #999;
+    text-shadow: 1px 1px 0 #eee;
+}
+.page_header span{
+    font-family:verdana, arial, tahoma;
+    font-size: 12px;
+    padding: 5px;
+    line-height: 20px;
+}
+/*end*/
+/* Định nghĩa cho các form */
+.form_content input, .form_content select, .form_content textarea {
+    font-family:verdana, arial, tahoma;
+    font-size: 14px;
+    padding: 5px;
+    /*    height: 20px;*/
+    display: inline-block;
+    color: #333;
+    font-weight: normal;
+}
+.form_content td.title {
+    font-size: 13px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.form_content td.title span {
+    color: red;
+}
+.form-filter {
+    margin: 5px;
+}
+/* end form */
+
+/*dinh nghia style cho cac nut*/
+a.button {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background : #D5D5D5; /* old browsers */
+    background: -moz-linear-gradient(center bottom , #D5D5D5 10%, #F0F0F0 93%, #FFFFFF 99%) repeat scroll 0 0 #F0F0F0; /* firefox */
+    background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#D5D5D5), color-stop(100%,#F0F0F0)); /* webkit */
+    /*filter : progid : DXImageTransform.Microsoft.gradient( startColorstr='#D5D5D5', endColorstr='#F0F0F0',GradientType=0 );  ie */
+    background : -o-linear-gradient(top, #D5D5D5 0%,#F0F0F0 100%); /* opera */
+    border-color: #B3B3B3 #B3B3B3 #939393;
+    border-radius: 3px 3px 3px 3px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 #C0C0BA;
+    color: #505050;
+    cursor: pointer;
+    font-family:verdana, arial, tahoma;
+    font-size: 12px;
+    height: 16px;
+    outline: 0 none;
+    overflow: hidden;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 1px 0 #EEEEEC;
+    vertical-align: middle;
+    display: inline-block;
+    text-decoration: none;
+    padding-bottom: 7px;
+}
+a.button:hover {
+    background : #D5D5D5; /* old browsers */
+    background: -moz-linear-gradient(center bottom , #C6C6C6 10%, #F0F0F0 93%, #FFFFFF 99%) repeat scroll 0 0 #F0F0F0; /* firefox */
+    background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C6C6C6), color-stop(100%,#F0F0F0)); /* webkit */
+    /*filter : progid : DXImageTransform.Microsoft.gradient( startColorstr='#C6C6C6', endColorstr='#F0F0F0',GradientType=0 );  ie */
+    background : -o-linear-gradient(top, #C6C6C6 0%,#F0F0F0 100%); /* opera */
+    border-color: #939393;
+    color: #002C3F;
+}
+
+/*Các nút chỉnh sửa*/
+a.add, a.edit, a.del, a.up, a.camera, a.back a.save {
+    text-decoration: none;
+}
+a.add em {
+    background: url('/duongbq/images/add.png') 10% 50% no-repeat;
+    padding-right: 20px;
+    margin: 0px;
+}
+a.edit em {
+    background: url('/duongbq/images/edit.png') 10% 50% no-repeat;
+    padding-right: 15px;
+    margin: 2px;
+}
+a.del em {
+    background: url('/duongbq/images/delete.png') 10% 50% no-repeat;
+    padding-right: 15px;
+    margin: 2px;
+}
+a.up em {
+    background: url('/duongbq/images/up.png') 10% 50% no-repeat;
+    padding-right: 15px;
+    margin: 2px;
+}
+a.close em {
+    background: url('/duongbq/images/close.png') 10% 50% no-repeat;
+    padding-right: 15px;
+    margin: 2px;
+}
+a.details em {
+    background: url('/duongbq/images/detail.png') 10% 50% no-repeat;
+    padding-right: 15px;
+    margin: 2px;
+}
+
+a.back em {
+    background: url('/duongbq/images/back.png') 10% 50% no-repeat;
+    padding-right: 15px;
+    margin: 2px;
+}
+
+a.absent em{
+    background: url('/duongbq/images/absent-green-icon.png') no-repeat 10% 50%;
+    padding-right: 15px;
+    margin: 2px;
+}
+
+a.password em {
+    background: url('/duongbq/images/password.png') no-repeat 10% 50%;
+    padding-right: 15px;
+    margin: 2px;
+}
+
+a.download em {
+    background: url('/duongbq/images/down.png') no-repeat 10% 50%;
+    padding-right: 15px;
+    margin: 2px;
+}
+a.save em {
+    background: url('/duongbq/images/save.png') no-repeat 10% 50%;
+    padding-right: 15px;
+    margin: 2px;
+}
+
+
+/*Admin menu panel*/
+#nav, #nav ul ,.nav{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    list-style-position:outside;
+    position:relative;
+    line-height:1.5em;
+}
+#nav a:link, #nav a:active, #nav a:visited, .nav a:link, .nav a:active, .nav a:visited{
+    display:block;
+    padding:10px;
+/*    border:1px solid #333;*/
+    color:#fff;
+    text-decoration:none;
+    background-color:#3e3e3e;
+}
+
+#nav a:hover, .nav a:hover {
+    background-color: #222;
+    color:#fff;
+}
+#nav li, .nav li {
+    float:left;
+    position:relative;
+}
+#nav ul {
+    position:absolute;
+    width:12em;
+    top: 37px;
+    display:none;
+    z-index: 10;
+}
+#nav li ul a{
+    width:12em;
+    float:left;
+}
+#nav ul ul{
+    top:auto;
+}
+
+#nav li ul ul {
+    left: 13em;
+    margin: 8px;
+    margin-top: 0px;
+}
+
+#nav li:hover ul ul, #nav li:hover ul ul ul, #nav li:hover ul ul ul ul{
+    display:none;
+}
+#nav li:hover ul, #nav li li:hover ul, #nav li li li:hover ul, #nav li li li li:hover ul{
+    display:block;
+}
+
+/*Định nghĩa cho sản phẩm*/
+/*SAN PHAM*/
+/*dinh  nghia style cho san pham*/
+.t-wrapper {
+    float: left;
+    margin: 4px;
+    width: 130px;
+}
+
+.t-square {
+    border: solid 0px #ddd;
+    position: relative;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    -moz-box-shadow : 0 0 2px #666;
+    -webkit-box-shadow : 0 0 2px #666;
+    box-shadow : 0 0 2px #666;
+}
+
+.t-img a {
+    padding: 5px;
+    display: block;
+}
+
+.t-img em{
+    width: 130px;
+    height: 130px;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.delete_me {
+    position:absolute;
+    top: -8px;
+    right: -10px;
+    display: none;
+    text-decoration: none;
+}
+
+/*MESSAGE*/
+.message {
+    width : auto;
+    font-family : verdana, arial, tahoma;
+    font-size : 12px;
+    line-height: 16px;
+    margin-top : 10px;
+    margin-bottom : 10px;
+    -moz-border-radius : 5px;
+    border-radius : 5px;
+}
+.message p{
+    margin : 0;
+    padding : 2px;
+    padding-left : 10px;
+    line-height: 16px;
+}
+.error{
+    border : solid 1px #FFC000;
+    background-color : #FFF8AF;
+    padding: 5px;
+}
+.succeed{
+    border : solid 1px green;
+    background-color : #F5FFEF;
+    padding: 5px;
+    font-weight: bold;
+}
+.warning{
+    border : solid 2px darkgoldenrod;
+    background-color : #FFFFDF;
+    padding: 5px;
+}
+
+/*Bảng support online*/
+.support_sort {
+    margin-top: 10px;
+    border: solid 1px #ddd;
+}
+.support_sort ul li.header {
+    font-family:verdana, arial, tahoma;
+    font-size: 12px;
+    padding: 5px;
+    line-height: 16px;
+    border: solid 1px #ddd;
+    font-weight: bold;
+    background-color: #e5e5e5;
+    color: #222;
+    white-space: nowrap;
+}
+.support_sort ul li {
+    font-family : tahoma, arial, verdana;
+    font-size : 12px;
+    line-height: 16px;
+    vertical-align: middle;
+    cursor: move;
+    padding: 5px;
+    font-weight: normal;
+    color: #222;
+    border-bottom: solid 1px #ddd;
+}
+.support_sort ul li:hover {
+    background-color: #f8f8f8;
+}
+.support_sort ul li a {
+    text-decoration: none;
+}
+
+/*CSS cho tab*/
+ul.tabs {
+    margin      : 0;
+    padding     : 0;
+    z-index     : 100;
+}
+ul.tabs li {
+    float       : left;
+    list-style  : none;
+    background-color : #fff;
+    padding     : .5em;
+    margin-top  : .75em;
+    margin-left: .075em;
+    margin-right: .075em;
+    display     : inline;
+    -moz-border-radius: 5px;
+    -moz-border-radius-bottomleft: 0px;
+    -moz-border-radius-bottomright: 0px;
+}
+ul.tabs li a {
+    display     : block;
+    white-space : nowrap;
+    color       : #8F8F8F;
+    text-decoration: none;
+}
+ul.tabs li a:hover {
+    color       : black;
+    text-decoration: underline;
+}
+ul.tabs li.active {
+    background-color  : #ddd;
+}
+ul.tabs  li.active a {
+    color       : #000;
+}
+.tab_container {
+    /*	border: 1px solid #999;*/
+    border-top: 1px solid #ddd;
+    overflow: hidden;
+    clear: both;
+    float: left; width: 100%;
+    /*    background: #f5f5f5;*/
+}
+.tab_content {
+    /*    padding: 20px;*/
+    font-size: 1.2em;
+}
+#sort_success {
+    width : 190px;
+    float: left;
+    font-family : tahoma, arial, verdana;
+    font-size : 13px;
+    line-height: 14px;
+    display: none;
+    margin-bottom : 10px;
+    -moz-border-radius : 5px;
+    border-radius : 5px;
+    border : solid 1px green;
+    background-color : #F5FFEF;
+    padding: 5px;
+    font-weight: bold;
+    z-index: 998;
+    position: absolute;
+    right: 350px;
+    top : 50px;
+}
+
+.number {
+    text-align: right;
+}
+
+/*css cho các list có thể sort*/
+.sortable {
+    margin-top: 10px;
+    border: solid 1px #ddd;
+}
+.sortable ul li.header {
+    font-family:verdana, arial, tahoma;
+    font-size: 12px;
+    padding: 5px;
+    line-height: 16px;
+    font-weight: bold;
+    background-color: #e5e5e5;
+    color: #222;
+    white-space: nowrap;
+}
+.sortable ul li {
+    font-family : tahoma, arial, verdana;
+    font-size : 12px;
+    line-height: 16px;
+    vertical-align: middle;
+    cursor: move;
+    padding: 5px;
+    font-weight: normal;
+    color: #222;
+    border-bottom: solid 1px #ddd;
+}
+.sortable ul li:hover {
+    background-color: #f8f8f8;
+}
+.sortable ul li a {
+    text-decoration: none;
+}
+.filter {
+    background-color: #F5F5F5;
+    border: 1px solid #EEEEEE;
+    font-family: tahoma,arial,verdana;
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.pagination {
+    overflow: hidden;
+    margin: 5px auto 0 auto;
+}
+.pagination a{
+    color: #696969;
+}
+
+.pagination a:hover ,
+.pagination strong{
+    background: darkred;
+    background-image: linear-gradient(bottom, #B82B2B 30%, #F25050 60%);
+    background-image: -o-linear-gradient(bottom, #B82B2B 30%, #F25050 60%);
+    background-image: -moz-linear-gradient(bottom, #B82B2B 30%, #F25050 60%);
+    background-image: -webkit-linear-gradient(bottom, #B82B2B 30%, #F25050 60%);
+    background-image: -ms-linear-gradient(bottom, #B82B2B 30%, #F25050 60%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.3, #B82B2B),
+        color-stop(0.6, #F25050)
+        );
+    color: #FFFFFF;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.pagination strong,
+.pagination a{
+    display: inline-block;
+    border: solid 1px silver;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    margin: 2px;
+    padding: 1px 7px;
+    overflow: hidden;
+    line-height: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+.template_panel {
+    background-color: #F5F5F5;
+    border: 1px solid #DDDDDD;
+    color: #000000;
+    float: left;
+    height: 250px;;
+    text-align: center;
+    width: 170px;
+    margin-left: 5px;
+}
+.template_panel span {
+    border: 0 none;
+    color: #000000;
+    margin-top: 3px;
+}
+.template_panel img {
+    height: auto;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    width: 90%;
+}

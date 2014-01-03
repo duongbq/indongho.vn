@@ -1,0 +1,11 @@
+-- 18-9-2012
+ALTER TABLE `products`
+ADD COLUMN `tax`  tinyint NULL AFTER `top_seller`;
+ALTER TABLE `products`
+ADD COLUMN `summary`  text NULL AFTER `price`;
+
+-- update static page
+INSERT INTO `pages` VALUES ( NULL, 'Thông tin liên hệ', '/thong-tin-lien-he.htm', '<p>...</p>', '2012-9-24 09:08:26', NULL, '<h3>Liên hệ :</h3>\r\n<p><strong>Nội thật gỗ online</strong></p>\r\n<p>Điện thoại : 0198888888</p>\r\n<p>Địa chỉ : 631, Kim Ngưu, Hai Bà Trưng</p>', '', '', '', '', 1)
+,(NULL, 'NoithatGo Cam kêt', '/cam-ket.htm', '<p>...</p>', '2012-9-26 09:04:26', NULL, '<h2>Noithatgo online cam kết</h2>\r\n<table style=\"width: 100%;\">\r\n<tbody>\r\n<tr>\r\n<td><img style=\"float: left;\" src=\"http://noithatduyminh.de/images/money_bag.png\" alt=\"\" /><br />\r\n<h3>TRẢ TIỀN KHI</h3>\r\n<h3>NHẬN HÀNG</h3>\r\n</td>\r\n<td><img style=\"float: left;\" src=\"http://noithatduyminh.de/images/delivery.png\" alt=\"\" /><br />\r\n<h3>GIAO HÀNG</h3>\r\n<h3>TẬN NƠI</h3>\r\n</td>\r\n<td style=\"width: 333px;\"><img style=\"float: left;\" src=\"http://noithatduyminh.de/images/camera_test.png\" alt=\"\" /><br />\r\n<h3>ĐẢM BẢO HÀNG HÓA</h3>\r\n<h3>ĐỔI TRẢ, HOÀN TIỀN VỚI SẢN PHẨM LỖI</h3>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>', '', '', '', '', 1)
+,(NULL, 'Mạng xã hội', 'mang-xa-hoi', '<p><a style=\"margin-right: 10px;\" title=\"Facebook\" href=\"https://www.facebook.com/\"><img src=\"/images/facebook_icon.png\" alt=\"\" /></a> <a style=\"margin-right: 10px;\" title=\"Twitter\" href=\"https://twitter.com/\"><img src=\"/images/twitter_icon.png\" alt=\"\" /></a> <a style=\"margin-right: 10px;\" title=\"Google+\" href=\"https://plus.google.com\"><img src=\"/images/gplus_icon.png\" alt=\"\" /></a> <a style=\"margin-right: 10px;\" href=\"mailto:dzung.tt@live.com\"><img src=\"/images/mail_icon.png\" alt=\"\" /></a></p>', '2012-9-26 10:23:44', NULL, '<p>...</p>', '', '', '', '', 1)
+,(NULL, 'Top - Tư vấn khách hàng', 'top-support', '<p><strong><span style=\"color: #ff0000;\">Tư vấn khách hàng : 0989.375.797</span></strong></p>', '2012-9-26 10:16:49', NULL, '<p><span style=\"color: #ff0000;\">Tư vấn khách hàng : 0989.375.797</span></p>', '', '', '', '', 1);
